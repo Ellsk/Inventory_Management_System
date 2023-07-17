@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="600.0" style="-fx-background-color: #ECECE7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.invenotory_management_system.LoginController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="264.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="289.0" fitWidth="295.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" scaleY="1.4">
+               <image>
+                  <Image url="@../../IMS images/inventory management system background.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane opacity="0.95" prefHeight="400.0" prefWidth="338.0" style="-fx-background-color: #ECECE7;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="lockImageView" fitHeight="37.0" fitWidth="54.0" layoutX="160.0" layoutY="87.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../IMS images/images.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="160.0" text="Username">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="103.0" layoutY="156.0" prefHeight="26.0" prefWidth="176.0" promptText="Username" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="219.0" text="Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="enterPasswordField" alignment="CENTER" layoutX="103.0" layoutY="215.0" prefHeight="26.0" prefWidth="176.0" promptText="Password" />
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="55.0" layoutY="261.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #E96151;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" alignment="CENTER" layoutX="55.0" layoutY="316.0" mnemonicParsing="false" onAction="#onCancelButtonAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #E96151;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="38.0" layoutY="252.0" prefHeight="17.0" prefWidth="243.0" textFill="#ff0808" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="14.0" text="Inventory Management System">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="376.0" text="New User?">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="registerButton" layoutX="101.0" layoutY="372.0" mnemonicParsing="false" onAction="#createAccountForm" style="-fx-background-color: transparent; -fx-border-color: transparent;" textFill="RED">
+               <text>Register</text>
+            </Button>
+            <ProgressBar layoutX="-262.0" layoutY="404.0" prefHeight="18.0" prefWidth="600.0" progress="0.0" />
+
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

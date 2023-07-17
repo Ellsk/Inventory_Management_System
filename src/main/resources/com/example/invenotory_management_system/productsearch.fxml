@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.invenotory_management_system.ProductSearchController">
+   <children>
+      <TableView fx:id="productTableVIew" layoutX="29.0" layoutY="73.0" prefHeight="502.0" prefWidth="1020.0">
+        <columns>
+          <TableColumn fx:id="productIDTableColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="brandTableColumn" prefWidth="75.0" text="Brand" />
+            <TableColumn fx:id="modelNumberTableColumn" prefWidth="105.0" text="ModelNumber" />
+            <TableColumn fx:id="modelYearTableColum" prefWidth="97.0" text="ModelYear" />
+            <TableColumn fx:id="productNameTableColumn" prefWidth="271.0" text="ProductName" />
+            <TableColumn fx:id="descriptionTableColumn" minWidth="0.0" prefWidth="396.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="33.0" text="Search Product">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keywordTextField" layoutX="141.0" layoutY="31.0" opacity="0.42" prefHeight="25.0" prefWidth="836.0" text="Keywords..." />
+   </children>
+</Pane>
