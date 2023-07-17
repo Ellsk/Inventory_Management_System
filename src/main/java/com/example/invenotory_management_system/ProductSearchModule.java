@@ -6,7 +6,7 @@ public class ProductSearchModule {
     Integer modelYear;
     String productName, description;
 
-   public ProductSearchModule(Integer productID, String modelNumber, String brand, Integer modelYear, String productName, String description){
+   public ProductSearchModule(Integer productID, String brand, Integer modelYear, String modelNumber, String productName, String description){
         this.productID = productID;
         this.brand = brand;
         this.modelNumber = modelNumber;
@@ -40,7 +40,7 @@ public class ProductSearchModule {
     }
 
     public void setProductID(Integer productID) {
-        this.productID = productID;   
+        this.productID = productID;
     }
 
     public void setBrand(String brand) {
