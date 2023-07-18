@@ -1,19 +1,21 @@
 package com.example.invenotory_management_system;
 
 public class ProductSearchModule {
-    Integer productID;
-    String brand, modelNumber;
-    Integer modelYear;
-    String productName, description;
+    private Integer productID;
+    private String brand;
+    private String modelNumber;
+    private Integer modelYear;
+    private String productName;
+    private String description;
 
-   public ProductSearchModule(Integer productID, String brand, Integer modelYear, String modelNumber, String productName, String description){
+    public ProductSearchModule(Integer productID, String brand, String modelNumber, Integer modelYear, String productName, String description) {
         this.productID = productID;
         this.brand = brand;
         this.modelNumber = modelNumber;
-        this.productName = productName;
         this.modelYear = modelYear;
+        this.productName = productName;
         this.description = description;
-   }
+    }
 
     public Integer getProductID() {
         return productID;
